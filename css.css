@@ -212,18 +212,28 @@ border: #f7bd32 1px solid;
 .info-item {
   display: flex;
   background-color: #f7bd32;
+  justify-content: space-between;
+  gap: 5vw;
+  align-items: center;
+}
+.info-item--price::after {
+  content: url(./icon/price.png);
+  
+
 }
 .info-item--transfer::before {
-  content: url(./img/pin_icon.svg);
+  content: url(./icon/transfer.png);
   background-position: center center;
   border-color: transparent;
   border-style: solid;
 }
-.info-item--stock::before {
+.info-item--stock::after {
+  content: url(./icon/stock.png);
+
 }
 .info-item--fast::before {
-}
-.info-item--working::before {
+  content: url(./icon/spec-price.png);
+
 }
 
 .about__item ul {
@@ -435,9 +445,9 @@ gap: .75vw;
   }
   .info-item {
     width: 80%;
-    color: #fff;
+    color: #000;
     font-size: 1.25rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     position: relative;
     transform: translateY(-2rem);
   }
@@ -997,19 +1007,22 @@ gap: .75vw;
     display: flex;
     align-items: center;
     width: 40%;
-    color: #fff;
-    font-size: 2.2vw;
-    padding: 1vw 3vw;
+    color: #000;
+    font-size: 1.8vw;
+    padding: 1.5vw 3vw;
     position: relative;
     border-radius: 0.25vw;
     gap: 1vw;
   }
   .info-item ul {
     line-height: 160%;
+    text-align: left;
+    padding: 0;
   }
   .info-item li {
-    font-size: 1.25vw;
+    font-size: 1vw;
     line-height: 120%;
+    padding: 0 1vw;   
   }
   .header__lrsp {
     font-size: 3vw;
