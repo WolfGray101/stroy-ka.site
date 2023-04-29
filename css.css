@@ -66,6 +66,7 @@ button:hover {
   gap: 1rem;
   padding: 3rem 1rem 3rem;
   width: 40vw;
+  height: 100vh;
   opacity: 1;
 }
 .modal-menu__open {
@@ -122,6 +123,7 @@ button:hover {
   line-height: 1.5rem;
   border-bottom: #f7bd32 2px dotted;
   width: fit-content;
+  margin-bottom: 1.5rem;
 }
 .mobile-menu-btn {
   width: fit-content;
@@ -244,6 +246,9 @@ border: #f7bd32 1px solid;
   font-weight: 400;
   line-height: 150%;
 }
+.complect__item {
+  position: relative;
+}
 
 figure {
   transition-duration: 0.3s;
@@ -253,13 +258,46 @@ figure:hover {
   transform: scale(1.05);
   transition-duration: 0.3s;
 }
+
 figure img {
   width: 100%;
 }
 figcaption {
+  visibility: hidden;
   font-weight: 400;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  opacity: 0;
+  transition-duration: .3s;
+pointer-events: none;
 }
 
+figure:hover  ~ figcaption{
+  visibility: visible;
+  opacity: 1;
+  transition-duration: .3s;
+  }
+  .price-label {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    background: url(./icon/price-label2.png);
+    width: 25%;
+    height: 25%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+.price-label p {
+  font-size: 1.25rem;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 15%;
+  left: 20%;
+  font-weight: 700;
+}
 .footer {
   display: flex;
   color: #333;
@@ -603,7 +641,7 @@ gap: .75vw;
     margin: .5rem 0 1rem;
   }
   .modal-menu {
-    width: 100%;
+    width: 75%;
   }
 
   .close__open {
