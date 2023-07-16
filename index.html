@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--metatextblock-->
     <title>Строительные леса купить - 190р/секция</title>
+
+    <link rel="canonical" href="https://stroy-ka.site" />
     <meta
       name="description"
       content="Леса рамные строительные в Минске с доставкой по
@@ -496,10 +498,12 @@
                 }, 3000);
               }
             };
+            console.log(applicantForm);
 
             applicantForm.onsubmit = async (e) => {
               e.preventDefault();
               fnConstructor("loading");
+              console.log(new FormData(applicantForm));
               try {
                 const res = await fetch("send.php", {
                   method: "POST",
@@ -514,6 +518,7 @@
             };
           </script>
         </div>
+        <p class="footer-description">Сайт не является интернет-магазином. Информация на сайте несет исключительно ознакомительный характер. Для уточнения актуальных цен, наличия и прочих условий настоятельно рекомендуем свзяться с нами по указанным контактным данным во избежание недоразумений</p>
       </footer>
     </main>
 

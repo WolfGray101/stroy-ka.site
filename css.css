@@ -8,6 +8,15 @@
 a {
   text-decoration: none;
 }
+.footer-description {
+  font-size: .6vw;
+  position: absolute;
+  bottom: 1vh;
+  left: 50%;
+  width: 90vw;
+  transform: translate(-50% , 0);
+  text-align: center;
+}
 .sendInfo {
   font-size: 1.5rem;
   padding: 1rem 2rem;
@@ -435,6 +444,9 @@ input {
   .header {
     padding: 0.5rem 1.5rem;
   }
+  .footer-description {
+    font-size: .5rem;
+  }
   .button {
     border-radius: 0.2rem;
     padding: 0.5rem 1.5rem;
@@ -579,7 +591,9 @@ input {
       transform: translateY(-2rem);
       align-items: center;
     }
-
+    .footer-description {
+      font-size: .5rem;
+    }
     .price-label p {
       font-size: 4vw;
       top: 20%;
@@ -801,6 +815,9 @@ input {
   .header {
     padding: 1rem 2rem;
   }
+  .footer-description {
+    font-size: .5rem;
+  }
   .button {
     border-radius: 0.2rem;
     padding: 0.5rem 1.5rem;
@@ -1010,7 +1027,7 @@ input {
 
   .footer {
     gap: 2rem;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 4rem;
     justify-content: space-around;
   }
   .footer-item {
@@ -1083,6 +1100,7 @@ input {
   .header {
     padding: 1vw 5vw;
   }
+
   .header-logo {
     width: 10vw;
     position: absolute;
